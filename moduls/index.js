@@ -7,14 +7,17 @@ const overlay = document.querySelector("carrito__overlay")
 const carritoTotal = document.querySelector(".carrito__total")
 const clearCarritoBtn = document.querySelector(".clear__carrito")
 const itemTotales = document.querySelector(".item__total")
-
+const searchBar = document.getElementById('buscar')
 let carrito = []
 let buttonDOM = []
+
+
 
 class UI{
   renderProductos(productos){
     let result = ""
     productos.forEach( producto => {
+      
       result += `
       <div class="producto">
       <div class="image__container">
@@ -52,6 +55,10 @@ class UI{
     });
     productoDOM.innerHTML =result
   }
+
+ 
+
+
   getButtons(){
     const buttons = [...document.querySelectorAll(".addToCart")]
     buttonDOM = buttons
@@ -216,14 +223,14 @@ class Storage{
     return producto.find(product => product.id === parseFloat(id, 10))
   }
   static getCart(){
-    return localStorage.getItem("carruto") ? JSONparse(localStorage.getItem('carrito')) : []
+    return localStorage.getItem("carrito") ? JSON.parse(localStorage.getItem('carrito')) : []
   }
 }
 
 class Productos {
   async getProductos(){
     try{
-      const result = await fetch("productos.json")
+      const result = await fetch("/moduls/productos.json")
       const data = await result.json()
       const productos = data.items
       return productos
@@ -234,15 +241,53 @@ class Productos {
 }
 
 
+let category = ""
+let productos = []
+
+function categoryValue(){
+  const ui = new UI()
+
+  category = document.getElementById("category").value
+  if(category.length > 0){
+    const producto = productos.filter(regx => regx.category === category)
+    ui.renderProductos(producto)
+  }else{
+    ui.renderProductos(productos)
+  }
+}
+
+
+
+searchBar.addEventListener('keyup', (e) => {
+  const ui = new UI()
+  const searchString = e.target.value.toLowerCase();
+
+  const producto = productos.filter((producto) => {
+      return (
+          producto.title.toLowerCase().includes(searchString) ||
+          producto.category.toLowerCase().includes(searchString)
+      );
+  });
+  ui.renderProductos(producto)
+});
+
+
+
 document.addEventListener("DOMContentLoaded", async () =>{
   const productosLista = new Productos();
   const ui = new UI()
 
   ui.setAPP()
 
-  const productos = await productosLista.getProductos()
+  productos = await productosLista.getProductos()
   ui.renderProductos(productos)
   Storage.saveProduct(productos)
   ui.getButtons()
   ui.cartLogic()
 })
+
+
+
+
+
+

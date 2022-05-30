@@ -12,18 +12,19 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="/assets/favicon-32x32.png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="stylesheet" href="./estilos/main.css" />
     <title>NUCBASPORT</title>
   </head>
   <body>
     <nav class="nav">
       <div class="nav__center container">
         <div class="nav__logo">
-          <h1>NUCBA <span>SPORT</span></h1>
+          <a href="index.html" class="home"><h1>NUCBA <span>SPORT</span></h1></a>
         </div>
         <ul class="nav__list">
           <span class="nav__product user">
-            <a href=""><i class="bx bxs-user"></i></a>
+            <a href="login.html"><i class="bx bxs-user"></i></a>
           </span>
           <div class="carrito__icon">
             <i class="bx bx-cart"></i>
@@ -32,6 +33,13 @@
         </ul>
       </div>
     </nav>
+
+
+    <div class="container-wsp">
+      <a href="https://walink.co/a56cb4" target="_blank"><img src="./assets/whatsapp.png" alt="" sizes="50px"></a>
+    </div>
+
+
 
     <!--CARROUSEL-->
 
@@ -53,7 +61,7 @@
         </div>
         <div class="carousel-item">
           <img
-            src="./assets/adidas-banner.jpg"
+            src="./assets/airjordan12.jpg"
             class="d-block w-100"
             alt="..."
           />
@@ -79,165 +87,14 @@
       </button>
     </div>
 
-    <!--filter-->
-    <section class="filter">
-      <div class="grid">
-        <div class="div">
-          <label for="buscar"
-            ><span><i class="bx bx-search"></i></span
-          ></label>
-          <input
-            type="text"
-            name=""
-            id="buscar"
-            placeholder="Buscar Productos"
-          />
-        </div>
-        <div class="category">
-          <select id="category">
-            <option value="adidas">Adidas</option>
-            <option value="nike">Nike</option>
-            <option value="jordan">Jordan</option>
-          </select>
-        </div>
-      </div>
-    </section>
+
 
     <div class="btn-contain">
       <div class="btn__center">
-        <a href="./productos.html">Ver todos los productos</a>
+        <a href="./productos.html">Ver los productos</a>
       </div>
     </div>
 
-    <!--productos-->
-    <section class="productos">
-      <div class="productos__center">
-        <div class="producto">
-          <div class="image__container">
-            <img src="./assets/pngwing.com (1).png" alt="" />
-            <div class="producto__footer">
-              <h1>Zapatillas Originales</h1>
-              <div class="rating">
-                <span>
-                  <i class="bx bxs-star"></i>
-                </span>
-                <span>
-                  <i class="bx bxs-star"></i>
-                </span>
-                <span>
-                  <i class="bx bxs-star"></i>
-                </span>
-                <span>
-                  <i class="bx bxs-star"></i>
-                </span>
-                <span>
-                  <i class="bx bx-star"></i>
-                </span>
-              </div>
-              <div class="price">$102.00</div>
-            </div>
-            <div class="bottom">
-              <div class="btn_group">
-                <a href="" class="btn addToCart">Añadir Carrito</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="producto">
-          <div class="image__container">
-            <img src="./assets/pngwing.com (1).png" alt="" />
-            <div class="producto__footer">
-              <h1>Zapatillas Originales</h1>
-              <div class="rating">
-                <span>
-                  <i class="bx bxs-star"></i>
-                </span>
-                <span>
-                  <i class="bx bxs-star"></i>
-                </span>
-                <span>
-                  <i class="bx bxs-star"></i>
-                </span>
-                <span>
-                  <i class="bx bxs-star"></i>
-                </span>
-                <span>
-                  <i class="bx bx-star"></i>
-                </span>
-              </div>
-              <div class="price">$102.00</div>
-            </div>
-            <div class="bottom">
-              <div class="btn_group">
-                <a href="" class="btn addToCart">Añadir Carrito</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="producto">
-          <div class="image__container">
-            <img src="./assets/pngwing.com (1).png" alt="" />
-            <div class="producto__footer">
-              <h1>Zapatillas Originales</h1>
-              <div class="rating">
-                <span>
-                  <i class="bx bxs-star"></i>
-                </span>
-                <span>
-                  <i class="bx bxs-star"></i>
-                </span>
-                <span>
-                  <i class="bx bxs-star"></i>
-                </span>
-                <span>
-                  <i class="bx bxs-star"></i>
-                </span>
-                <span>
-                  <i class="bx bx-star"></i>
-                </span>
-              </div>
-              <div class="price">$102.00</div>
-            </div>
-            <div class="bottom">
-              <div class="btn_group">
-                <a href="" class="btn addToCart">Añadir Carrito</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="producto">
-          <div class="image__container">
-            <img src="./assets/pngwing.com (1).png" alt="" />
-            <div class="producto__footer">
-              <h1>Zapatillas Originales</h1>
-              <div class="rating">
-                <span>
-                  <i class="bx bxs-star"></i>
-                </span>
-                <span>
-                  <i class="bx bxs-star"></i>
-                </span>
-                <span>
-                  <i class="bx bxs-star"></i>
-                </span>
-                <span>
-                  <i class="bx bxs-star"></i>
-                </span>
-                <span>
-                  <i class="bx bx-star"></i>
-                </span>
-              </div>
-              <div class="price">$102.00</div>
-            </div>
-            <div class="bottom">
-              <div class="btn_group">
-                <a href="" class="btn addToCart">Añadir Carrito</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!--carrito-->
     <section class="carrito__overlay">
@@ -262,22 +119,22 @@
       <div class="image_hero">
         <div class="banner_hero">
           <img
-            src="./assets/Captura de pantalla 2022-05-18 224518.png"
+            src="./assets/banner.png"
             alt=""
           />
         </div>
         <div class="hero_container">
           <img
-            src="./assets/d2f3af7288d63858f35a197e7de5c404af506514-1100x735.jpg"
+            src="./assets/hero1.jpg"
             alt=""
           />
           <img
-            src="./assets/f5891d00cd0582522621cbab9dcbcabd47f52463-700x468.jpg"
+            src="./assets/hero-2.jpg"
             alt=""
           />
-          <img src="./assets/Air-Jordan-4-Black-Cat-2020.jpg" alt="" />
+          <img src="./assets/hero-3.jpg" alt="" />
           <img
-            src="./assets/afew-store-sneaker-air-jordan-3-retro-og-black-firered-cementgrey-white-339.jpg"
+            src="./assets/hero-4.jpg"
             alt=""
           />
         </div>
@@ -288,18 +145,18 @@
     <footer class="footer">
       <div class="footer__container">
         <div class="nav__logo">
-          <h1>NUCBA <span>SPORT</span></h1>
+          <h4>NUCBA <span>SPORT</span></h4>
         </div>
         <div class="socials">
-          <span><i class="bx bxl-instagram"></i></span>
-          <span><i class="bx bxs-envelope"></i></span>
-          <span><i class="bx bxl-whatsapp"></i></span>
+          <a href="https://www.instagram.com/" target="_blank" ><span><i class="bx bxl-instagram"></i></span></a>
+          <a href="mailto:pablocan631@gmail.com" target="_blank" ><span><i class="bx bxs-envelope"></i></span></a>
+          <a href="https://walink.co/a56cb4" target="_blank" ><span><i class="bx bxl-whatsapp"></i></span></a>
         </div>
       </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
-    <script src="./index.js"></script>
+    <script src="/moduls/index.js"></script>
   </body>
 </html>

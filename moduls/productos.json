@@ -1,10 +1,10 @@
-{
+ {
     "status": "success",
     "items": [{
             "id": 1,
-            "title": "Jordan 1",
-            "price": 18000,
-            "image": "./assets/jordan-1.png",
+            "title": "Jordan 11",
+            "price": 45000,
+            "image": "./assets/jordan-retro-11.png",
             "category": "jordan"
         },
         {
@@ -16,7 +16,7 @@
         },
         {
             "id": 3,
-            "title": "Nike Air max 97",
+            "title": "Nike Air Max 97",
             "price": 25000,
             "image": "./assets/nike-air-max-97.png",
             "category": "nike"
@@ -25,7 +25,7 @@
             "id": 4,
             "title": "Jordan Retro 5",
             "price": 28000,
-            "image": "./assets/jordan-retro-5.png",
+            "image": "./assets/jordan-paris.png",
             "category": "jordan"
         },
         {
@@ -38,7 +38,7 @@
         },
         {
             "id": 6,
-            "title": "Adidas yeezy",
+            "title": "Adidas Yeezy",
             "price": 35000,
             "image": "./assets/adidas-yeezy.png",
             "category": "adidas"
@@ -55,15 +55,22 @@
             "id": 8,
             "title": "Adidas Superstar",
             "price": 24000,
-            "image": "./assets/adidas-superstar.png",
-            "category": "omega"
+            "image": "./assets/adidasSuperstar.png",
+            "category": "adidas"
         },
         {
             "id": 9,
-            "title": "Jordan Retro 11",
+            "title": "Jordan 1",
             "price": 40000,
-            "image": "./assets/jordan-retro-11.png",
-            "category": "Jordan"
+            "image": "./assets/jordann.png",
+            "category": "jordan"
+        },
+        {
+            "id": 10,
+            "title": "Nike Huarache",
+            "price": 27000,
+            "image": "./assets/nike-huarache.png",
+            "category": "nike"
         }
     ]
 }

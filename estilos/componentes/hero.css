@@ -1,0 +1,26 @@
+.hero__contain{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.image_hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   height: 80%;
+    margin-top: 1rem;
+}
+.hero_container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.hero_container img{
+    max-width: 400px;
+  max-height: 400px;
+}

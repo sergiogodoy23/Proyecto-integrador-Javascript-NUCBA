@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    />
+    <link rel="icon" type="/assets/favicon-32x32.png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="./estilos/main.css" />
+    <title>NUCBASPORT</title>
+  </head>
+  <body>
+  
+    <nav class="nav">
+      <div class="nav__center container">
+        <div class="nav__logo">
+          <a href="index.html" class="home"><h1>NUCBA <span>SPORT</span></h1></a>
+        </div>
+        <ul class="nav__list">
+          <span class="nav__product user">
+            <a href="./login.html"><i class="bx bxs-user"></i></a>
+          </span>
+          <div class="carrito__icon">
+            <i class="bx bx-cart"></i>
+            <span class="item__total">0</span>
+          </div>
+        </ul>
+      </div>
+    </nav>
+
+    
+    <div class="container-wsp">
+      <a href="https://walink.co/a56cb4" target="_blank"><img src="./assets/whatsapp.png" alt=""></a>
+    </div>
+   
+
+    <!--filter-->
+    <section class="filter">
+      <div class="grid">
+        <div class="div">
+          <label for="buscar"
+            ><span><i class="bx bx-search"></i></span
+          ></label>
+          <input
+            type="text"
+            name=""
+            id="buscar"
+            placeholder="Buscar Productos"
+          />
+        </div>
+        <div class="category">
+          <select id="category" onclick="categoryValue()">
+            <option value="">Todos los productos</option>
+            <option value="adidas">Adidas</option>
+            <option value="nike">Nike</option>
+            <option value="jordan">Jordan</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+
+    <!--productos-->
+    <section class="productos">
+      <div class="productos__center">
+       
+      </div>
+    </section>
+
+    <!--carrito-->
+    <section class="carrito__overlay">
+      <div class="carrito">
+        <span class="close__carrito">
+          <i class="bx bx-x"></i>
+        </span>
+        <h1>Su Carrito</h1>
+        <div class="carrito__center">
+          
+        </div>
+
+        <div class="carrito__footer">
+          <h3>Total: $ <span class="carrito__total"> 0 </span></h3>
+          <button class="clear__carrito btn">Vaciar Carrito</button>
+        </div>
+      </div>
+    </section>
+
+
+    <!--FOOTER-->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="nav__logo">
+          <h4>NUCBA <span>SPORT</span></h4>
+        </div>
+        <div class="socials">
+          <a href="https://www.instagram.com/" target="_blank" ><span><i class="bx bxl-instagram"></i></span></a>
+          <a href="mailto:pablocan631@gmail.com" target="_blank" ><span><i class="bx bxs-envelope"></i></span></a>
+          <a href="https://walink.co/a56cb4" target="_blank" ><span><i class="bx bxl-whatsapp"></i></span></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+    <script src="/moduls/index.js"></script>
+  </body>
+</html>

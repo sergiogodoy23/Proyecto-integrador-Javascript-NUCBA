@@ -1,0 +1,94 @@
+.nav{
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 0;
+    line-height: 1rem;
+    background-color:var(--black);
+}
+
+.nav__center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.nav__logo a{
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.nav__logo span{
+    color: var(--yellow)
+}
+
+
+.nav__list{
+    display: flex;
+    align-items: center;
+}
+
+.nav__list span:hover{
+    color: var(--yellow);
+}
+
+.nav__list span{
+    display: inline-block;
+    font-size: 3.5rem;
+    margin-top: .2rem;
+    margin-right: 2.2rem;
+    color: var(--white);
+}
+
+
+.nav__product a{
+    text-decoration: none;
+    font-size: 3rem;
+    margin-top: .2rem;
+    color: var(--white);
+}
+
+.next a{
+    font-size: 2.5rem;
+}
+
+.nav__product a:hover{
+    color: var(--yellow);
+}
+
+.carrito__icon{
+    position: relative;
+    cursor: pointer;
+}
+
+.carrito__icon i{
+    margin-top: .6rem;
+    font-size: 3.5rem;
+    color: var(--white) 
+}
+
+.carrito__icon span{
+    position: absolute;
+    top: -.4rem;
+    right: -3.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f00;
+    color: var(--white);
+    padding: .5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 50%;
+}
+
+.carousel{
+    width: 80%;
+    margin: auto;
+}
+
+.carousel img{
+    height: 60vh;
+}
